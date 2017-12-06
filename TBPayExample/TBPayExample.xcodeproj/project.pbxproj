@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045E91D81FD7D49F009ADB02 /* PayManagerOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04691C971FD7D1FC008BB103 /* PayManagerOC.m */; };
 		A38ED82FD855868B4E820773 /* Pods_TBPayExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A52A2A137E7F96F751F1F9 /* Pods_TBPayExample.framework */; };
 		FFA663811FD79F4A0079F4ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA663801FD79F4A0079F4ED /* AppDelegate.swift */; };
 		FFA663831FD79F4A0079F4ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA663821FD79F4A0079F4ED /* ViewController.swift */; };
@@ -412,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045E91D81FD7D49F009ADB02 /* PayManagerOC.m in Sources */,
 				FFA663831FD79F4A0079F4ED /* ViewController.swift in Sources */,
 				FFA663CA1FD7ACA20079F4ED /* PayManager.swift in Sources */,
 				FFA663811FD79F4A0079F4ED /* AppDelegate.swift in Sources */,
