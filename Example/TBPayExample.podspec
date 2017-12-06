@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "TBPay"
+  s.name         = "TBPayExample"
   s.version      = "0.0.2"
   s.summary      = "PayManager管理"
 
