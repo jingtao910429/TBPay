@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "TBPayExample/TBPayExample/test.swift"
+  s.source_files  = "TBPayExample/TBPayExample/Pay/*"
   s.vendored_frameworks = 'TBPayExample/TBPayExample/AliPay/AlipaySDK.framework'
   s.resource = 'TBPayExample/TBPayExample/AliPay/AlipaySDK.bundle'
   
