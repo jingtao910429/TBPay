@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AlipaySDK/AlipaySDK.h>
 
 @interface PayManagerOC : NSObject
 - (void)startAliPay:(NSString *)orderInfo scheme:(NSString *)scheme;

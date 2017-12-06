@@ -7,9 +7,11 @@
 //
 
 #import "PayManagerOC.h"
+#import <AlipaySDK/AlipaySDK.h>
 
 @implementation PayManagerOC
 - (void)startAliPay:(NSString *)orderInfo scheme:(NSString *)scheme {
-    
+    [[AlipaySDK defaultService] payOrder:orderInfo fromScheme:scheme callback:^(NSDictionary *resultDic) {
+    }];
 }
 @end

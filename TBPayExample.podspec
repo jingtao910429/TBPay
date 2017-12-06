@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TBPayExample"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "PayManager管理"
 
   # This description is used to generate tags and improve search results.
@@ -90,10 +90,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "TBPayExample/TBPayExample/Pay/*"
+  
   s.vendored_frameworks = 'TBPayExample/TBPayExample/AliPay/AlipaySDK.framework'
   s.resource = 'TBPayExample/TBPayExample/AliPay/AlipaySDK.bundle'
-  
+  s.source_files  = "TBPayExample/TBPayExample/Pay/*"
   
   # s.source_files  = "Classes", "Classes/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
