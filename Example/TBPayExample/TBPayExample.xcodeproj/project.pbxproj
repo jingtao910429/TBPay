@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A38ED82FD855868B4E820773 /* Pods_TBPayExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A52A2A137E7F96F751F1F9 /* Pods_TBPayExample.framework */; };
+		FFA663811FD79F4A0079F4ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA663801FD79F4A0079F4ED /* AppDelegate.swift */; };
+		FFA663831FD79F4A0079F4ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA663821FD79F4A0079F4ED /* ViewController.swift */; };
+		FFA663861FD79F4A0079F4ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA663841FD79F4A0079F4ED /* Main.storyboard */; };
+		FFA663881FD79F4A0079F4ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA663871FD79F4A0079F4ED /* Assets.xcassets */; };
+		FFA6638B1FD79F4A0079F4ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA663891FD79F4A0079F4ED /* LaunchScreen.storyboard */; };
+		FFA663961FD79F4A0079F4ED /* TBPayExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA663951FD79F4A0079F4ED /* TBPayExampleTests.swift */; };
+		FFA663A11FD79F4A0079F4ED /* TBPayExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA663A01FD79F4A0079F4ED /* TBPayExampleUITests.swift */; };
+		FFA663B21FD7A7F20079F4ED /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663B11FD7A7F20079F4ED /* libc++.tbd */; };
+		FFA663B41FD7A8030079F4ED /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663B31FD7A8030079F4ED /* libz.tbd */; };
+		FFA663B61FD7A80D0079F4ED /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663B51FD7A80D0079F4ED /* SystemConfiguration.framework */; };
+		FFA663B81FD7A8160079F4ED /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663B71FD7A8160079F4ED /* CoreTelephony.framework */; };
+		FFA663BA1FD7A8230079F4ED /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663B91FD7A8230079F4ED /* QuartzCore.framework */; };
+		FFA663BC1FD7A82F0079F4ED /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663BB1FD7A82F0079F4ED /* CoreText.framework */; };
+		FFA663BE1FD7A83A0079F4ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663BD1FD7A83A0079F4ED /* CoreGraphics.framework */; };
+		FFA663C01FD7A8430079F4ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663BF1FD7A8430079F4ED /* UIKit.framework */; };
+		FFA663C21FD7A84D0079F4ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663C11FD7A84D0079F4ED /* Foundation.framework */; };
+		FFA663C41FD7A8580079F4ED /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663C31FD7A8580079F4ED /* CFNetwork.framework */; };
+		FFA663C61FD7A8640079F4ED /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663C51FD7A8640079F4ED /* CoreMotion.framework */; };
+		FFA663C71FD7A8C80079F4ED /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663AF1FD7A7C40079F4ED /* AlipaySDK.framework */; };
+		FFA663CA1FD7ACA20079F4ED /* PayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA663C91FD7ACA20079F4ED /* PayManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFA663921FD79F4A0079F4ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFA663751FD79F4A0079F4ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFA6637C1FD79F4A0079F4ED;
+			remoteInfo = TBPayExample;
+		};
+		FFA6639D1FD79F4A0079F4ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFA663751FD79F4A0079F4ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFA6637C1FD79F4A0079F4ED;
+			remoteInfo = TBPayExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45A52A2A137E7F96F751F1F9 /* Pods_TBPayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TBPayExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		957D818365C984ACB25FE65F /* Pods-TBPayExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBPayExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBPayExample/Pods-TBPayExample.release.xcconfig"; sourceTree = "<group>"; };
+		B7DCE2DEC29438D5EFCD66A2 /* Pods-TBPayExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBPayExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TBPayExample/Pods-TBPayExample.debug.xcconfig"; sourceTree = "<group>"; };
+		FFA6637D1FD79F4A0079F4ED /* TBPayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBPayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA663801FD79F4A0079F4ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFA663821FD79F4A0079F4ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFA663851FD79F4A0079F4ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFA663871FD79F4A0079F4ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFA6638A1FD79F4A0079F4ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFA6638C1FD79F4A0079F4ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFA663911FD79F4A0079F4ED /* TBPayExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBPayExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA663951FD79F4A0079F4ED /* TBPayExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBPayExampleTests.swift; sourceTree = "<group>"; };
+		FFA663971FD79F4A0079F4ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFA6639C1FD79F4A0079F4ED /* TBPayExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBPayExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA663A01FD79F4A0079F4ED /* TBPayExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBPayExampleUITests.swift; sourceTree = "<group>"; };
+		FFA663A21FD79F4A0079F4ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFA663AF1FD7A7C40079F4ED /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		FFA663B01FD7A7C40079F4ED /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		FFA663B11FD7A7F20079F4ED /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FFA663B31FD7A8030079F4ED /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FFA663B51FD7A80D0079F4ED /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FFA663B71FD7A8160079F4ED /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		FFA663B91FD7A8230079F4ED /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FFA663BB1FD7A82F0079F4ED /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FFA663BD1FD7A83A0079F4ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FFA663BF1FD7A8430079F4ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FFA663C11FD7A84D0079F4ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFA663C31FD7A8580079F4ED /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FFA663C51FD7A8640079F4ED /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		FFA663C81FD7A9FB0079F4ED /* TBPayExample-Bridgin-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBPayExample-Bridgin-Header.h"; sourceTree = "<group>"; };
+		FFA663C91FD7ACA20079F4ED /* PayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFA6637A1FD79F4A0079F4ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA663C71FD7A8C80079F4ED /* AlipaySDK.framework in Frameworks */,
+				FFA663C61FD7A8640079F4ED /* CoreMotion.framework in Frameworks */,
+				FFA663C41FD7A8580079F4ED /* CFNetwork.framework in Frameworks */,
+				FFA663C21FD7A84D0079F4ED /* Foundation.framework in Frameworks */,
+				FFA663C01FD7A8430079F4ED /* UIKit.framework in Frameworks */,
+				FFA663BE1FD7A83A0079F4ED /* CoreGraphics.framework in Frameworks */,
+				FFA663BC1FD7A82F0079F4ED /* CoreText.framework in Frameworks */,
+				FFA663BA1FD7A8230079F4ED /* QuartzCore.framework in Frameworks */,
+				FFA663B81FD7A8160079F4ED /* CoreTelephony.framework in Frameworks */,
+				FFA663B61FD7A80D0079F4ED /* SystemConfiguration.framework in Frameworks */,
+				FFA663B41FD7A8030079F4ED /* libz.tbd in Frameworks */,
+				FFA663B21FD7A7F20079F4ED /* libc++.tbd in Frameworks */,
+				A38ED82FD855868B4E820773 /* Pods_TBPayExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA6638E1FD79F4A0079F4ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA663991FD79F4A0079F4ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		260D1AC1CC177A62F56B1C22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFA663C51FD7A8640079F4ED /* CoreMotion.framework */,
+				FFA663C31FD7A8580079F4ED /* CFNetwork.framework */,
+				FFA663C11FD7A84D0079F4ED /* Foundation.framework */,
+				FFA663BF1FD7A8430079F4ED /* UIKit.framework */,
+				FFA663BD1FD7A83A0079F4ED /* CoreGraphics.framework */,
+				FFA663BB1FD7A82F0079F4ED /* CoreText.framework */,
+				FFA663B91FD7A8230079F4ED /* QuartzCore.framework */,
+				FFA663B71FD7A8160079F4ED /* CoreTelephony.framework */,
+				FFA663B51FD7A80D0079F4ED /* SystemConfiguration.framework */,
+				FFA663B31FD7A8030079F4ED /* libz.tbd */,
+				FFA663B11FD7A7F20079F4ED /* libc++.tbd */,
+				45A52A2A137E7F96F751F1F9 /* Pods_TBPayExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F524547CB5DBCF2BF03B46A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7DCE2DEC29438D5EFCD66A2 /* Pods-TBPayExample.debug.xcconfig */,
+				957D818365C984ACB25FE65F /* Pods-TBPayExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFA663741FD79F4A0079F4ED = {
+			isa = PBXGroup;
+			children = (
+				FFA6637F1FD79F4A0079F4ED /* TBPayExample */,
+				FFA663941FD79F4A0079F4ED /* TBPayExampleTests */,
+				FFA6639F1FD79F4A0079F4ED /* TBPayExampleUITests */,
+				FFA6637E1FD79F4A0079F4ED /* Products */,
+				9F524547CB5DBCF2BF03B46A /* Pods */,
+				260D1AC1CC177A62F56B1C22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFA6637E1FD79F4A0079F4ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFA6637D1FD79F4A0079F4ED /* TBPayExample.app */,
+				FFA663911FD79F4A0079F4ED /* TBPayExampleTests.xctest */,
+				FFA6639C1FD79F4A0079F4ED /* TBPayExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFA6637F1FD79F4A0079F4ED /* TBPayExample */ = {
+			isa = PBXGroup;
+			children = (
+				FFA663AE1FD7A7AB0079F4ED /* AliPay */,
+				FFA663801FD79F4A0079F4ED /* AppDelegate.swift */,
+				FFA663821FD79F4A0079F4ED /* ViewController.swift */,
+				FFA663C91FD7ACA20079F4ED /* PayManager.swift */,
+				FFA663C81FD7A9FB0079F4ED /* TBPayExample-Bridgin-Header.h */,
+				FFA663841FD79F4A0079F4ED /* Main.storyboard */,
+				FFA663871FD79F4A0079F4ED /* Assets.xcassets */,
+				FFA663891FD79F4A0079F4ED /* LaunchScreen.storyboard */,
+				FFA6638C1FD79F4A0079F4ED /* Info.plist */,
+			);
+			path = TBPayExample;
+			sourceTree = "<group>";
+		};
+		FFA663941FD79F4A0079F4ED /* TBPayExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFA663951FD79F4A0079F4ED /* TBPayExampleTests.swift */,
+				FFA663971FD79F4A0079F4ED /* Info.plist */,
+			);
+			path = TBPayExampleTests;
+			sourceTree = "<group>";
+		};
+		FFA6639F1FD79F4A0079F4ED /* TBPayExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFA663A01FD79F4A0079F4ED /* TBPayExampleUITests.swift */,
+				FFA663A21FD79F4A0079F4ED /* Info.plist */,
+			);
+			path = TBPayExampleUITests;
+			sourceTree = "<group>";
+		};
+		FFA663AE1FD7A7AB0079F4ED /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				FFA663B01FD7A7C40079F4ED /* AlipaySDK.bundle */,
+				FFA663AF1FD7A7C40079F4ED /* AlipaySDK.framework */,
+			);
+			path = AliPay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFA6637C1FD79F4A0079F4ED /* TBPayExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA663A51FD79F4A0079F4ED /* Build configuration list for PBXNativeTarget "TBPayExample" */;
+			buildPhases = (
+				3CB597C6D0C14E5B063E40FE /* [CP] Check Pods Manifest.lock */,
+				FFA663791FD79F4A0079F4ED /* Sources */,
+				FFA6637A1FD79F4A0079F4ED /* Frameworks */,
+				FFA6637B1FD79F4A0079F4ED /* Resources */,
+				60E58C5D2218E1479896BC41 /* [CP] Embed Pods Frameworks */,
+				67BB77D4C09B83CD4BA2D382 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBPayExample;
+			productName = TBPayExample;
+			productReference = FFA6637D1FD79F4A0079F4ED /* TBPayExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFA663901FD79F4A0079F4ED /* TBPayExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA663A81FD79F4A0079F4ED /* Build configuration list for PBXNativeTarget "TBPayExampleTests" */;
+			buildPhases = (
+				FFA6638D1FD79F4A0079F4ED /* Sources */,
+				FFA6638E1FD79F4A0079F4ED /* Frameworks */,
+				FFA6638F1FD79F4A0079F4ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFA663931FD79F4A0079F4ED /* PBXTargetDependency */,
+			);
+			name = TBPayExampleTests;
+			productName = TBPayExampleTests;
+			productReference = FFA663911FD79F4A0079F4ED /* TBPayExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFA6639B1FD79F4A0079F4ED /* TBPayExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA663AB1FD79F4A0079F4ED /* Build configuration list for PBXNativeTarget "TBPayExampleUITests" */;
+			buildPhases = (
+				FFA663981FD79F4A0079F4ED /* Sources */,
+				FFA663991FD79F4A0079F4ED /* Frameworks */,
+				FFA6639A1FD79F4A0079F4ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFA6639E1FD79F4A0079F4ED /* PBXTargetDependency */,
+			);
+			name = TBPayExampleUITests;
+			productName = TBPayExampleUITests;
+			productReference = FFA6639C1FD79F4A0079F4ED /* TBPayExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFA663751FD79F4A0079F4ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = qianqichao;
+				TargetAttributes = {
+					FFA6637C1FD79F4A0079F4ED = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
+					};
+					FFA663901FD79F4A0079F4ED = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FFA6637C1FD79F4A0079F4ED;
+					};
+					FFA6639B1FD79F4A0079F4ED = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FFA6637C1FD79F4A0079F4ED;
+					};
+				};
+			};
+			buildConfigurationList = FFA663781FD79F4A0079F4ED /* Build configuration list for PBXProject "TBPayExample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFA663741FD79F4A0079F4ED;
+			productRefGroup = FFA6637E1FD79F4A0079F4ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFA6637C1FD79F4A0079F4ED /* TBPayExample */,
+				FFA663901FD79F4A0079F4ED /* TBPayExampleTests */,
+				FFA6639B1FD79F4A0079F4ED /* TBPayExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFA6637B1FD79F4A0079F4ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA6638B1FD79F4A0079F4ED /* LaunchScreen.storyboard in Resources */,
+				FFA663881FD79F4A0079F4ED /* Assets.xcassets in Resources */,
+				FFA663861FD79F4A0079F4ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA6638F1FD79F4A0079F4ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA6639A1FD79F4A0079F4ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CB597C6D0C14E5B063E40FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TBPayExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60E58C5D2218E1479896BC41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TBPayExample/Pods-TBPayExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67BB77D4C09B83CD4BA2D382 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TBPayExample/Pods-TBPayExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFA663791FD79F4A0079F4ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA663831FD79F4A0079F4ED /* ViewController.swift in Sources */,
+				FFA663CA1FD7ACA20079F4ED /* PayManager.swift in Sources */,
+				FFA663811FD79F4A0079F4ED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA6638D1FD79F4A0079F4ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA663961FD79F4A0079F4ED /* TBPayExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA663981FD79F4A0079F4ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA663A11FD79F4A0079F4ED /* TBPayExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFA663931FD79F4A0079F4ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFA6637C1FD79F4A0079F4ED /* TBPayExample */;
+			targetProxy = FFA663921FD79F4A0079F4ED /* PBXContainerItemProxy */;
+		};
+		FFA6639E1FD79F4A0079F4ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFA6637C1FD79F4A0079F4ED /* TBPayExample */;
+			targetProxy = FFA6639D1FD79F4A0079F4ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFA663841FD79F4A0079F4ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFA663851FD79F4A0079F4ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFA663891FD79F4A0079F4ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFA6638A1FD79F4A0079F4ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFA663A31FD79F4A0079F4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFA663A41FD79F4A0079F4ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFA663A61FD79F4A0079F4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7DCE2DEC29438D5EFCD66A2 /* Pods-TBPayExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TBPayExample/AliPay",
+				);
+				INFOPLIST_FILE = TBPayExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applechina.RongYu100;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/TBPayExample/TBPayExample-Bridgin-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFA663A71FD79F4A0079F4ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 957D818365C984ACB25FE65F /* Pods-TBPayExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TBPayExample/AliPay",
+				);
+				INFOPLIST_FILE = TBPayExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applechina.RongYu100;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/TBPayExample/TBPayExample-Bridgin-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFA663A91FD79F4A0079F4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TBPayExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rabbit.liyou.TBPayExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TBPayExample.app/TBPayExample";
+			};
+			name = Debug;
+		};
+		FFA663AA1FD79F4A0079F4ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TBPayExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rabbit.liyou.TBPayExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TBPayExample.app/TBPayExample";
+			};
+			name = Release;
+		};
+		FFA663AC1FD79F4A0079F4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TBPayExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rabbit.liyou.TBPayExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TBPayExample;
+			};
+			name = Debug;
+		};
+		FFA663AD1FD79F4A0079F4ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TBPayExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rabbit.liyou.TBPayExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TBPayExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFA663781FD79F4A0079F4ED /* Build configuration list for PBXProject "TBPayExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA663A31FD79F4A0079F4ED /* Debug */,
+				FFA663A41FD79F4A0079F4ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA663A51FD79F4A0079F4ED /* Build configuration list for PBXNativeTarget "TBPayExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA663A61FD79F4A0079F4ED /* Debug */,
+				FFA663A71FD79F4A0079F4ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA663A81FD79F4A0079F4ED /* Build configuration list for PBXNativeTarget "TBPayExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA663A91FD79F4A0079F4ED /* Debug */,
+				FFA663AA1FD79F4A0079F4ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA663AB1FD79F4A0079F4ED /* Build configuration list for PBXNativeTarget "TBPayExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA663AC1FD79F4A0079F4ED /* Debug */,
+				FFA663AD1FD79F4A0079F4ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFA663751FD79F4A0079F4ED /* Project object */;
+}
