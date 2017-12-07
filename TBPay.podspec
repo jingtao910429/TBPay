@@ -42,13 +42,17 @@ Pod::Spec.new do |s|
   s.source_files  = "TBPay/Pay/*"
   #s.dependency 'WechatOpenSDK'
   # s.vendored_libraries = 'TBPay/WechatOpenSDK/OpenSDK1.8.0/libWeChatSDK.a'
-  s.static_framework = true
+  # s.static_framework = true
   # s.prefix_header_contents = '#import "FMTFoundation.h"'
 
-  s.subspec 'Pay' do |subspec|
+  s.subspec 'WeChatPay' do |subspec|
     subspec.source_files = "TBPay/WechatOpenSDK/OpenSDK1.8.0/*.{h}"
-
     subspec.vendored_libraries = 'TBPay/WechatOpenSDK/OpenSDK1.8.0/*{.a}'
+    subspec.framework = 'CoreMotion'
+    
+  end
+
+  s.subspec 'AliPay' do |subspec|
     subspec.vendored_frameworks = 'TBPay/AliPay/AlipaySDK.framework'
     subspec.resource = 'TBPay/AliPay/AlipaySDK.bundle'
     subspec.framework = 'CoreMotion'
