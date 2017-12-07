@@ -13,9 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         return true
     }
 
@@ -46,6 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             AlipaySDK.defaultService().processOrder(withPaymentResult: url, standbyCallback: { (result) in
                 print("------------\(result)")
             })
+        } else if url.host == "pay" {
+            WXApi.handleOpen(url, delegate: self)
         }
         return true
     }
@@ -55,6 +57,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             AlipaySDK.defaultService().processOrder(withPaymentResult: url, standbyCallback: { (result) in
                 print("------------\(result)")
             })
+        } else if url.host == "pay" {
+            WXApi.handleOpen(url, delegate: self)
         }
         return true
     }
@@ -64,9 +68,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             AlipaySDK.defaultService().processOrder(withPaymentResult: url, standbyCallback: { (result) in
                 print("------------\(result)")
             })
+        } else if url.host == "pay" {
+            WXApi.handleOpen(url, delegate: self)
         }
         return true
     }
 
+}
+
+extension AppDelegate: WXApiDelegate {
+    
+    func onReq(_ req: BaseReq!) {
+        
+    }
+    
+    func onResp(_ resp: BaseResp!) {
+        
+    }
+    
 }
 

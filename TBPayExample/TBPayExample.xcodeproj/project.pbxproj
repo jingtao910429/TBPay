@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		045E91D81FD7D49F009ADB02 /* PayManagerOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04691C971FD7D1FC008BB103 /* PayManagerOC.m */; };
 		A38ED82FD855868B4E820773 /* Pods_TBPayExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A52A2A137E7F96F751F1F9 /* Pods_TBPayExample.framework */; };
 		FFA663811FD79F4A0079F4ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA663801FD79F4A0079F4ED /* AppDelegate.swift */; };
 		FFA663831FD79F4A0079F4ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA663821FD79F4A0079F4ED /* ViewController.swift */; };
@@ -28,7 +27,7 @@
 		FFA663C41FD7A8580079F4ED /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663C31FD7A8580079F4ED /* CFNetwork.framework */; };
 		FFA663C61FD7A8640079F4ED /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663C51FD7A8640079F4ED /* CoreMotion.framework */; };
 		FFA663C71FD7A8C80079F4ED /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663AF1FD7A7C40079F4ED /* AlipaySDK.framework */; };
-		FFA663CA1FD7ACA20079F4ED /* PayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA663C91FD7ACA20079F4ED /* PayManager.swift */; };
+		FFAC96D71FD7E15E008605B7 /* PayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAC96D61FD7E15E008605B7 /* PayManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04691C971FD7D1FC008BB103 /* PayManagerOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayManagerOC.m; sourceTree = "<group>"; };
-		04691C981FD7D1FC008BB103 /* PayManagerOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayManagerOC.h; sourceTree = "<group>"; };
 		45A52A2A137E7F96F751F1F9 /* Pods_TBPayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TBPayExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		957D818365C984ACB25FE65F /* Pods-TBPayExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBPayExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBPayExample/Pods-TBPayExample.release.xcconfig"; sourceTree = "<group>"; };
 		B7DCE2DEC29438D5EFCD66A2 /* Pods-TBPayExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBPayExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TBPayExample/Pods-TBPayExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,8 +77,9 @@
 		FFA663C11FD7A84D0079F4ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FFA663C31FD7A8580079F4ED /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		FFA663C51FD7A8640079F4ED /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		FFA663C81FD7A9FB0079F4ED /* TBPayExample-Bridgin-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBPayExample-Bridgin-Header.h"; sourceTree = "<group>"; };
-		FFA663C91FD7ACA20079F4ED /* PayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayManager.swift; sourceTree = "<group>"; };
+		FFAC96D51FD7E15E008605B7 /* PayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayManager.h; sourceTree = "<group>"; };
+		FFAC96D61FD7E15E008605B7 /* PayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayManager.m; sourceTree = "<group>"; };
+		FFAC96D81FD7E2CD008605B7 /* TBPayExample-Bridgin-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBPayExample-Bridgin-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +123,8 @@
 		04691C961FD7D1FC008BB103 /* Pay */ = {
 			isa = PBXGroup;
 			children = (
-				04691C971FD7D1FC008BB103 /* PayManagerOC.m */,
-				04691C981FD7D1FC008BB103 /* PayManagerOC.h */,
+				FFAC96D51FD7E15E008605B7 /* PayManager.h */,
+				FFAC96D61FD7E15E008605B7 /* PayManager.m */,
 			);
 			path = Pay;
 			sourceTree = "<group>";
@@ -188,8 +186,7 @@
 				FFA663AE1FD7A7AB0079F4ED /* AliPay */,
 				FFA663801FD79F4A0079F4ED /* AppDelegate.swift */,
 				FFA663821FD79F4A0079F4ED /* ViewController.swift */,
-				FFA663C91FD7ACA20079F4ED /* PayManager.swift */,
-				FFA663C81FD7A9FB0079F4ED /* TBPayExample-Bridgin-Header.h */,
+				FFAC96D81FD7E2CD008605B7 /* TBPayExample-Bridgin-Header.h */,
 				FFA663841FD79F4A0079F4ED /* Main.storyboard */,
 				FFA663871FD79F4A0079F4ED /* Assets.xcassets */,
 				FFA663891FD79F4A0079F4ED /* LaunchScreen.storyboard */,
@@ -296,7 +293,7 @@
 				TargetAttributes = {
 					FFA6637C1FD79F4A0079F4ED = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					FFA663901FD79F4A0079F4ED = {
 						CreatedOnToolsVersion = 9.0;
@@ -416,10 +413,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045E91D81FD7D49F009ADB02 /* PayManagerOC.m in Sources */,
 				FFA663831FD79F4A0079F4ED /* ViewController.swift in Sources */,
-				FFA663CA1FD7ACA20079F4ED /* PayManager.swift in Sources */,
 				FFA663811FD79F4A0079F4ED /* AppDelegate.swift in Sources */,
+				FFAC96D71FD7E15E008605B7 /* PayManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,8 +583,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E2MHYTRHEB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TBPayExample/AliPay",
@@ -596,7 +592,26 @@
 				INFOPLIST_FILE = TBPayExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.applechina.RongYu100;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"WeChatSDK\"",
+					"-l\"c++\"",
+					"-l\"sqlite3.0\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.2boss.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -612,8 +627,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E2MHYTRHEB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TBPayExample/AliPay",
@@ -621,7 +636,26 @@
 				INFOPLIST_FILE = TBPayExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.applechina.RongYu100;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"WeChatSDK\"",
+					"-l\"c++\"",
+					"-l\"sqlite3.0\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.2boss.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/TBPayExample/TBPayExample-Bridgin-Header.h";
