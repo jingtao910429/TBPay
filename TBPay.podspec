@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "TBPay"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "PayManager支付管理"
 
   s.description  = <<-DESC
@@ -48,7 +48,7 @@ Pod::Spec.new do |s|
   s.subspec 'Pay' do |subspec|
     subspec.source_files = "TBPay/WechatOpenSDK/OpenSDK1.8.0/*.{h}"
 
-    s.vendored_libraries = 'TBPay/WechatOpenSDK/OpenSDK1.8.0/*{.a}'
+    subspec.vendored_libraries = 'TBPay/WechatOpenSDK/OpenSDK1.8.0/*{.a}'
     subspec.vendored_frameworks = 'TBPay/AliPay/AlipaySDK.framework'
     subspec.resource = 'TBPay/AliPay/AlipaySDK.bundle'
     subspec.framework = 'CoreMotion'
