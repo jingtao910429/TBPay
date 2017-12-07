@@ -6,5 +6,5 @@ source 'https://github.com/jingtao910429/2BossSpecs.git'
 target 'TBPayExample' do
     use_frameworks!
 #    pod 'TBPay'
-	pod 'WechatOpenSDK'
+#    pod 'WechatOpenSDK'
 end

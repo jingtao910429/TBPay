@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "TBPay"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "PayManager支付管理"
 
   s.description  = <<-DESC
@@ -26,11 +26,6 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/jingtao910429/TBPay.git"}
 
-  s.vendored_frameworks = 'TBPayExample/TBPayExample/AliPay/AlipaySDK.framework'
-  s.resource = 'TBPayExample/TBPayExample/AliPay/AlipaySDK.bundle'
-  s.source_files  = "TBPayExample/TBPayExample/Pay/*"
-  s.dependency 'WechatOpenSDK'
-  
   s.frameworks          = "CoreMotion", 
   "SystemConfiguration", 
   "CoreTelephony", 
@@ -40,7 +35,16 @@ Pod::Spec.new do |s|
   "CFNetwork", 
   "UIKit", 
   "Foundation"
-  s.libraries           = "z", "c++", "c"
+  s.libraries           = "z", "c++", "c", "sqlite3"
+
+  
+  s.vendored_frameworks = 'TBPayExample/TBPayExample/AliPay/AlipaySDK.framework'
+  s.resource = 'TBPayExample/TBPayExample/AliPay/AlipaySDK.bundle'
+  s.source_files  = "TBPayExample/TBPayExample/WechatOpenSDK/OpenSDK1.8.0/**.{h}", "TBPayExample/TBPayExample/Pay/*"
+  #s.dependency 'WechatOpenSDK'
+  s.vendored_libraries = 'TBPayExample/TBPayExample/WechatOpenSDK/OpenSDK1.8.0/libWeChatSDK.a'
+  s.static_framework = true
+  
 
   s.requires_arc = true
 

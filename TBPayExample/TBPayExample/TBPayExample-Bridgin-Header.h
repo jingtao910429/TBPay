@@ -11,6 +11,6 @@
 
 #import <AlipaySDK/AlipaySDK.h>
 #import "PayManager.h"
-#import <WechatOpenSDK/WXApi.h>
+#import "WXApi.h"
 
 #endif
