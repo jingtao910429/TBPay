@@ -26,8 +26,6 @@
 		FFA663C21FD7A84D0079F4ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663C11FD7A84D0079F4ED /* Foundation.framework */; };
 		FFA663C41FD7A8580079F4ED /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663C31FD7A8580079F4ED /* CFNetwork.framework */; };
 		FFA663C61FD7A8640079F4ED /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663C51FD7A8640079F4ED /* CoreMotion.framework */; };
-		FFA663C71FD7A8C80079F4ED /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA663AF1FD7A7C40079F4ED /* AlipaySDK.framework */; };
-		FFAC96D71FD7E15E008605B7 /* PayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAC96D61FD7E15E008605B7 /* PayManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0483ADF71FD903C700E98320 /* WXApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		0483ADF81FD903C700E98320 /* WXApiObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		0483ADF91FD903C700E98320 /* WechatAuthSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		0483ADFA1FD903C700E98320 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		45A52A2A137E7F96F751F1F9 /* Pods_TBPayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TBPayExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		957D818365C984ACB25FE65F /* Pods-TBPayExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBPayExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBPayExample/Pods-TBPayExample.release.xcconfig"; sourceTree = "<group>"; };
 		B7DCE2DEC29438D5EFCD66A2 /* Pods-TBPayExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBPayExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TBPayExample/Pods-TBPayExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,8 +62,6 @@
 		FFA6639C1FD79F4A0079F4ED /* TBPayExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBPayExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA663A01FD79F4A0079F4ED /* TBPayExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBPayExampleUITests.swift; sourceTree = "<group>"; };
 		FFA663A21FD79F4A0079F4ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFA663AF1FD7A7C40079F4ED /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
-		FFA663B01FD7A7C40079F4ED /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		FFA663B11FD7A7F20079F4ED /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		FFA663B31FD7A8030079F4ED /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FFA663B51FD7A80D0079F4ED /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -81,8 +73,6 @@
 		FFA663C11FD7A84D0079F4ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FFA663C31FD7A8580079F4ED /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		FFA663C51FD7A8640079F4ED /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		FFAC96D51FD7E15E008605B7 /* PayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayManager.h; sourceTree = "<group>"; };
-		FFAC96D61FD7E15E008605B7 /* PayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayManager.m; sourceTree = "<group>"; };
 		FFAC96D81FD7E2CD008605B7 /* TBPayExample-Bridgin-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBPayExample-Bridgin-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +81,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFA663C71FD7A8C80079F4ED /* AlipaySDK.framework in Frameworks */,
 				FFA663C61FD7A8640079F4ED /* CoreMotion.framework in Frameworks */,
 				FFA663C41FD7A8580079F4ED /* CFNetwork.framework in Frameworks */,
 				FFA663C21FD7A84D0079F4ED /* Foundation.framework in Frameworks */,
@@ -124,34 +113,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04691C961FD7D1FC008BB103 /* Pay */ = {
-			isa = PBXGroup;
-			children = (
-				FFAC96D51FD7E15E008605B7 /* PayManager.h */,
-				FFAC96D61FD7E15E008605B7 /* PayManager.m */,
-			);
-			path = Pay;
-			sourceTree = "<group>";
-		};
-		0483ADF51FD903C700E98320 /* WechatOpenSDK */ = {
-			isa = PBXGroup;
-			children = (
-				0483ADF61FD903C700E98320 /* OpenSDK1.8.0 */,
-			);
-			path = WechatOpenSDK;
-			sourceTree = "<group>";
-		};
-		0483ADF61FD903C700E98320 /* OpenSDK1.8.0 */ = {
-			isa = PBXGroup;
-			children = (
-				0483ADF71FD903C700E98320 /* WXApi.h */,
-				0483ADF81FD903C700E98320 /* WXApiObject.h */,
-				0483ADF91FD903C700E98320 /* WechatAuthSDK.h */,
-				0483ADFA1FD903C700E98320 /* libWeChatSDK.a */,
-			);
-			path = OpenSDK1.8.0;
-			sourceTree = "<group>";
-		};
 		260D1AC1CC177A62F56B1C22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,9 +166,6 @@
 		FFA6637F1FD79F4A0079F4ED /* TBPayExample */ = {
 			isa = PBXGroup;
 			children = (
-				0483ADF51FD903C700E98320 /* WechatOpenSDK */,
-				04691C961FD7D1FC008BB103 /* Pay */,
-				FFA663AE1FD7A7AB0079F4ED /* AliPay */,
 				FFA663801FD79F4A0079F4ED /* AppDelegate.swift */,
 				FFA663821FD79F4A0079F4ED /* ViewController.swift */,
 				FFAC96D81FD7E2CD008605B7 /* TBPayExample-Bridgin-Header.h */,
@@ -235,15 +193,6 @@
 				FFA663A21FD79F4A0079F4ED /* Info.plist */,
 			);
 			path = TBPayExampleUITests;
-			sourceTree = "<group>";
-		};
-		FFA663AE1FD7A7AB0079F4ED /* AliPay */ = {
-			isa = PBXGroup;
-			children = (
-				FFA663B01FD7A7C40079F4ED /* AlipaySDK.bundle */,
-				FFA663AF1FD7A7C40079F4ED /* AlipaySDK.framework */,
-			);
-			path = AliPay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,9 +370,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TBPayExample/Pods-TBPayExample-resources.sh",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -439,7 +391,6 @@
 			files = (
 				FFA663831FD79F4A0079F4ED /* ViewController.swift in Sources */,
 				FFA663811FD79F4A0079F4ED /* AppDelegate.swift in Sources */,
-				FFAC96D71FD7E15E008605B7 /* PayManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,10 +567,13 @@
 				INFOPLIST_FILE = TBPayExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TBPayExample/WechatOpenSDK/OpenSDK1.8.0",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"WeChatSDK\"",
 					"-l\"c++\"",
 					"-l\"sqlite3.0\"",
 					"-l\"z\"",
@@ -660,10 +614,13 @@
 				INFOPLIST_FILE = TBPayExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TBPayExample/WechatOpenSDK/OpenSDK1.8.0",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"WeChatSDK\"",
 					"-l\"c++\"",
 					"-l\"sqlite3.0\"",
 					"-l\"z\"",

@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "TBPay"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "PayManager支付管理"
 
   s.description  = <<-DESC
@@ -38,12 +38,22 @@ Pod::Spec.new do |s|
   s.libraries           = "z", "c++", "c", "sqlite3"
 
   
-  s.vendored_frameworks = 'TBPayExample/TBPayExample/AliPay/AlipaySDK.framework'
-  s.resource = 'TBPayExample/TBPayExample/AliPay/AlipaySDK.bundle'
-  s.source_files  = "TBPayExample/TBPayExample/WechatOpenSDK/OpenSDK1.8.0/**.{h}", "TBPayExample/TBPayExample/Pay/*"
+  # s.resource = 'TBPay/AliPay/AlipaySDK.bundle'
+  s.source_files  = "TBPay/Pay/*"
   #s.dependency 'WechatOpenSDK'
-  s.vendored_libraries = 'TBPayExample/TBPayExample/WechatOpenSDK/OpenSDK1.8.0/libWeChatSDK.a'
+  # s.vendored_libraries = 'TBPay/WechatOpenSDK/OpenSDK1.8.0/libWeChatSDK.a'
   s.static_framework = true
+  # s.prefix_header_contents = '#import "FMTFoundation.h"'
+
+  s.subspec 'Pay' do |subspec|
+    subspec.source_files = "TBPay/WechatOpenSDK/OpenSDK1.8.0/*.{h}"
+
+    s.vendored_libraries = 'TBPay/WechatOpenSDK/OpenSDK1.8.0/*{.a}'
+    subspec.vendored_frameworks = 'TBPay/AliPay/AlipaySDK.framework'
+    subspec.resource = 'TBPay/AliPay/AlipaySDK.bundle'
+    subspec.framework = 'CoreMotion'
+    
+  end
   
 
   s.requires_arc = true
