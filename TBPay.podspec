@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "TBPay"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "PayManager支付管理"
 
   s.description  = <<-DESC
@@ -55,6 +55,8 @@ Pod::Spec.new do |s|
   s.subspec 'AliPay' do |subspec|
     subspec.vendored_frameworks = 'TBPay/AliPay/AlipaySDK.framework'
     subspec.resource = 'TBPay/AliPay/AlipaySDK.bundle'
+    subspec.source_files = 'TBPay/AliPay/AlipaySDK.framework/Headers/*.{h}'
+    subspec.public_header_files = 'TBPay/AliPay/AlipaySDK.framework/Headers/*.{h}'
     subspec.framework = 'CoreMotion'
     
   end
