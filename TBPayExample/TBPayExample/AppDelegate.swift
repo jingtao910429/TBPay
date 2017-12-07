@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TBPay
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -41,28 +42,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-//    func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
-//        if url.host == "safepay" {
-//            AlipaySDK.defaultService().processOrder(withPaymentResult: url, standbyCallback: { (result) in
-//                print("------------\(result)")
-//            })
-//        } else if url.host == "pay" {
-//            WXApi.handleOpen(url, delegate: self)
-//        }
-//        return true
-//    }
-//
-//    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
-//        if url.host == "safepay" {
-//            AlipaySDK.defaultService().processOrder(withPaymentResult: url, standbyCallback: { (result) in
-//                print("------------\(result)")
-//            })
-//        } else if url.host == "pay" {
-//            WXApi.handleOpen(url, delegate: self)
-//        }
-//        return true
-//    }
-//
+    func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
+        if url.host == "safepay" {
+            AlipaySDK.defaultService().processOrder(withPaymentResult: url, standbyCallback: { (result) in
+                print("------------\(result)")
+            })
+        } else if url.host == "pay" {
+            WXApi.handleOpen(url, delegate: self)
+        }
+        return true
+    }
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+        if url.host == "safepay" {
+            AlipaySDK.defaultService().processOrder(withPaymentResult: url, standbyCallback: { (result) in
+                print("------------\(result)")
+            })
+        } else if url.host == "pay" {
+            WXApi.handleOpen(url, delegate: self)
+        }
+        return true
+    }
+
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         if url.host == "safepay" {
             AlipaySDK.defaultService().processOrder(withPaymentResult: url, standbyCallback: { (result) in
@@ -76,15 +77,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-//extension AppDelegate: WXApiDelegate {
-//    
-//    func onReq(_ req: BaseReq!) {
-//        
-//    }
-//    
-//    func onResp(_ resp: BaseResp!) {
-//        
-//    }
-//    
-//}
+extension AppDelegate: WXApiDelegate {
+    
+    func onReq(_ req: BaseReq!) {
+        
+    }
+    
+    func onResp(_ resp: BaseResp!) {
+        
+    }
+    
+}
 

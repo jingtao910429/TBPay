@@ -1,11 +1,15 @@
 PODS:
-  - TBPay (0.0.4)
+  - TBPay (0.0.8):
+    - TBPay/AliPay (= 0.0.8)
+    - TBPay/WeChatPay (= 0.0.8)
+  - TBPay/AliPay (0.0.8)
+  - TBPay/WeChatPay (0.0.8)
 
 DEPENDENCIES:
   - TBPay
 
 SPEC CHECKSUMS:
-  TBPay: 02316f53a92e16375a014bd66104c1e8d32c8a6d
+  TBPay: 103471d979f87a1366f3a578346f09e93e607f44
 
 PODFILE CHECKSUM: 66cb080432ec6cd1cf2e56337b9096b0b936caee
 

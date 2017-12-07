@@ -10,10 +10,12 @@
 #endif
 #endif
 
+#import "PayManager.h"
+#import "AlipaySDK.h"
+#import "APayAuthInfo.h"
 #import "WechatAuthSDK.h"
 #import "WXApi.h"
 #import "WXApiObject.h"
-#import "PayManager.h"
 
 FOUNDATION_EXPORT double TBPayVersionNumber;
 FOUNDATION_EXPORT const unsigned char TBPayVersionString[];

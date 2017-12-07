@@ -9,6 +9,4 @@
 #ifndef TBPayExample_Bridgin_Header_h
 #define TBPayExample_Bridgin_Header_h
 
-#import <TBPay/PayManager.h>
-#import "WXApi.h"
 #endif
