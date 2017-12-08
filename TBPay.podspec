@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "TBPay"
-  s.version      = "0.1.3"
+  s.version      = "0.1.4"
   s.summary      = "PayManager支付管理"
 
   s.description  = <<-DESC
@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
   # s.static_framework = true
   # s.prefix_header_contents = '#import "FMTFoundation.h"'
 
-  s.user_target_xcconfig =   {'OTHER_LDFLAGS' => ['-lObjC','-all_load']}
+  s.user_target_xcconfig =   {'OTHER_LINKER_FLAGS' => ['-lObjC','-all_load']}
 
   s.subspec 'WeChatPay' do |subspec|
     subspec.source_files = "TBPay/WechatOpenSDK/OpenSDK1.8.0/*.{h}"
