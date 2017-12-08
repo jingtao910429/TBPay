@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -54,7 +54,7 @@
 		49734CF1E330CD5276264465C17AE118 /* PayManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PayManager.m; path = TBPay/Pay/PayManager.m; sourceTree = "<group>"; };
 		585D935EB2BD2564FA281C01F44F5AA3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C630DC57F162A26CB33DAFA392F4B76 /* AlipaySDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = TBPay/AliPay/AlipaySDK.bundle; sourceTree = "<group>"; };
-		62B78EE29A40CECA7B95C43C6F2D67C5 /* TBPay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TBPay.modulemap; sourceTree = "<group>"; };
+		62B78EE29A40CECA7B95C43C6F2D67C5 /* TBPay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TBPay.modulemap; sourceTree = "<group>"; };
 		75380EF98DFB8184D39B17DBC65ED590 /* Pods-TBPayExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TBPayExample-frameworks.sh"; sourceTree = "<group>"; };
 		7873F27108A2F4FDA021D7BD6236BC81 /* TBPay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TBPay.xcconfig; sourceTree = "<group>"; };
 		7B11284ECDD84E3F9BA8EBECD931D484 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,16 +64,16 @@
 		881F64EAEFF80F0858BDE8CE62D4DA7E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		88E50312F38EAD2CC3C6A286B08EFABA /* Pods-TBPayExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TBPayExample-resources.sh"; sourceTree = "<group>"; };
 		937E9D148ED6A479E251337F289FD78A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9594A08FC51938D853903AB228FA6CD6 /* Pods-TBPayExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TBPayExample.debug.xcconfig"; sourceTree = "<group>"; };
 		99D95F5CFBCF538AA4785355255257F7 /* TBPay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TBPay-prefix.pch"; sourceTree = "<group>"; };
 		9A4768B62FF138B11EA5879BAFB1BB40 /* Pods-TBPayExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TBPayExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9F0C74999F7C36E9045CD02A31261D81 /* Pods-TBPayExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TBPayExample.modulemap"; sourceTree = "<group>"; };
+		9F0C74999F7C36E9045CD02A31261D81 /* Pods-TBPayExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TBPayExample.modulemap"; sourceTree = "<group>"; };
 		B28F3D57B5347A94914BF8A3E7A16DB5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		B2FBBC1BFBAA3750282DE69D990FE2E0 /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = TBPay/WechatOpenSDK/OpenSDK1.8.0/WechatAuthSDK.h; sourceTree = "<group>"; };
-		B6389AECA52AFF7D02BE6AF8456445FC /* TBPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TBPay.framework; path = TBPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6389AECA52AFF7D02BE6AF8456445FC /* TBPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TBPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C390FC84AE04295627128D50309A60FE /* Pods-TBPayExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TBPayExample-umbrella.h"; sourceTree = "<group>"; };
-		C83AB6A6623E2A9EB742641F409EC065 /* Pods_TBPayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TBPayExample.framework; path = "Pods-TBPayExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C83AB6A6623E2A9EB742641F409EC065 /* Pods_TBPayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TBPayExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64AE1C3AE04D7DB5318752665B2AE50 /* TBPay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TBPay-dummy.m"; sourceTree = "<group>"; };
 		D98F71E9A31D1474C9183F915617DF94 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = TBPay/WechatOpenSDK/OpenSDK1.8.0/WXApiObject.h; sourceTree = "<group>"; };
 		DDF7520887FAB1359A558ADE3A87A458 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = TBPay/WechatOpenSDK/OpenSDK1.8.0/WXApi.h; sourceTree = "<group>"; };
@@ -249,7 +249,6 @@
 				734EEE1E1B40CAFFF4CC8F3C56731C17 /* Support Files */,
 				2E10753A7478C58096D710B7F96906A0 /* WeChatPay */,
 			);
-			name = TBPay;
 			path = TBPay;
 			sourceTree = "<group>";
 		};
@@ -444,6 +443,35 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TBPay/TBPay.modulemap";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-l\"WeChatSDK\"",
+					"-l\"c\"",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AlipaySDK\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_NAME = TBPay;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -508,6 +536,35 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TBPay/TBPay.modulemap";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-l\"WeChatSDK\"",
+					"-l\"c\"",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AlipaySDK\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_NAME = TBPay;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
