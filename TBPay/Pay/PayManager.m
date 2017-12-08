@@ -25,6 +25,11 @@
 //            "orderInfo": "{\"xml\":{\"nonce_str\":\"JiuNk8EB2cDfcGBk\",\"appSign\":\"A5C207ED627C20374343D36A15C48D52\",\"appid\":\"wx801a8ba3b2643a3d\",\"sign\":\"4FEFA338CC5DDE8AA8832FF1AE42359E\",\"trade_type\":\"APP\",\"return_msg\":\"OK\",\"result_code\":\"SUCCESS\",\"mch_id\":1409656102,\"return_code\":\"SUCCESS\",\"prepay_id\":\"wx201712061805251251e788d40297651606\",\"timestamp\":1512554725}}"
 //        }
 //    }
+    //没有装微信客户端
+    if ([WXApi isWXAppInstalled] == false) {
+        return -2;
+    }
+    
     NSDictionary * para = [self dictionaryWithJsonString:order];
     //字符串解析失败
     if (para == nil) {
