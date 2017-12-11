@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "TBPay"
-  s.version      = "0.1.5"
+  s.version      = "0.1.6"
   s.summary      = "PayManager支付管理"
 
   s.description  = <<-DESC

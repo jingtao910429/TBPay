@@ -9,27 +9,35 @@
 #import "PayManager.h"
 #import <AlipaySDK/AlipaySDK.h>
 #import "WXApi.h"
+#import <PassKit/PKPaymentAuthorizationViewController.h>    //Apple pay的展示控件
+#import <AddressBook/AddressBook.h>                         //用户联系信息相关
+
+@interface PayManager() <PKPaymentAuthorizationViewControllerDelegate>
+
+@property (nonatomic, strong) UIViewController<TBApplyPayDelegate> * controller;
+
+@end
 
 @implementation PayManager
 
-+ (void)startAlipay:(NSString *)order scheme:(NSString *)scheme callback:(AliPayCompletionBlock)result {
++ (instancetype)shareManager {
+    static PayManager *instance = nil;
+    static dispatch_once_t oneToken;
+    dispatch_once(&oneToken, ^{
+        instance = [[self alloc] init];
+    });
+    return instance;
+}
+
+- (void)startAlipay:(NSString *)order scheme:(NSString *)scheme callback:(AliPayCompletionBlock)result {
     [[AlipaySDK defaultService] payOrder:order fromScheme:scheme callback:result];
 }
 
-+ (int)startWXPay:(NSString *)order {
-//    {
-//        "resultCode": 0,
-//        "errMsg": null,
-//        "body": {
-//            "orderNo": "2017120618052453533767",
-//            "orderInfo": "{\"xml\":{\"nonce_str\":\"JiuNk8EB2cDfcGBk\",\"appSign\":\"A5C207ED627C20374343D36A15C48D52\",\"appid\":\"wx801a8ba3b2643a3d\",\"sign\":\"4FEFA338CC5DDE8AA8832FF1AE42359E\",\"trade_type\":\"APP\",\"return_msg\":\"OK\",\"result_code\":\"SUCCESS\",\"mch_id\":1409656102,\"return_code\":\"SUCCESS\",\"prepay_id\":\"wx201712061805251251e788d40297651606\",\"timestamp\":1512554725}}"
-//        }
-//    }
-    
+- (TBPayResultType)startWXPay:(NSString *)order {
     NSDictionary * para = [self dictionaryWithJsonString:order];
     //字符串解析失败
     if (para == nil) {
-        return -1;
+        return TBPayResultType_ParsingFailure;
     }
     
     NSDictionary * req = para[@"xml"];
@@ -38,7 +46,7 @@
     
     //没有装微信客户端
     if ([WXApi isWXAppInstalled] == NO) {
-        return -2;
+        return TBPayResultType_WXAppNotInstalled;
     }
     
     PayReq *request = [[PayReq alloc] init];
@@ -52,7 +60,76 @@
     return 0;
 }
 
-+ (id)dictionaryWithJsonString:(NSString *)jsonString {
+- (TBPayResultType)startApplyPay:(NSString *)order controller:(UIViewController<TBApplyPayDelegate> *)controller {
+    if (![PKPaymentAuthorizationViewController class]) {
+        return TBPayResultType_ApplyPayDeviceNotAllowed;
+    }
+    if (![PKPaymentAuthorizationViewController canMakePayments]) {
+        return TBPayResultType_ApplyPayDeviceNotAllowed;
+    }
+    //检查用户是否可进行某种卡的支付，是否支持Amex、MasterCard、Visa与银联四种卡，根据自己项目的需要进行检测
+    NSArray *supportedNetworks = @[PKPaymentNetworkChinaUnionPay];
+    if (![PKPaymentAuthorizationViewController canMakePaymentsUsingNetworks:supportedNetworks]) {
+        return TBPayResultType_ApplyPayNetworkNotAllowed;
+    }
+    
+    NSDictionary * para = [self dictionaryWithJsonString:order];
+    //字符串解析失败
+    if (para == nil) {
+        return TBPayResultType_ParsingFailure;
+    }
+    self.controller = controller;
+    
+    PKPaymentRequest *payRequest = [[PKPaymentRequest alloc] init];
+    payRequest.countryCode = para[@"countryCode"];
+    payRequest.currencyCode = para[@"currencyCode"];
+    payRequest.merchantIdentifier = para[@"merchantIdentifier"];
+    payRequest.supportedNetworks = supportedNetworks;
+    payRequest.merchantCapabilities = PKMerchantCapability3DS|PKMerchantCapabilityEMV;
+    NSDecimalNumber *totalAmount = [NSDecimalNumber decimalNumberWithString:para[@"amount"]];
+    PKPaymentSummaryItem *total = [PKPaymentSummaryItem summaryItemWithLabel:para[@"summary"] amount:totalAmount];
+    
+    NSMutableArray *summaryItems = [NSMutableArray arrayWithArray:@[total]];
+    payRequest.paymentSummaryItems = summaryItems;
+    
+    PKPaymentAuthorizationViewController *view = [[PKPaymentAuthorizationViewController alloc]initWithPaymentRequest:payRequest];
+    view.delegate = self;
+    [self.controller presentViewController:view animated:YES completion:nil];
+    return 0;
+}
+
+#pragma mark - PKPaymentAuthorizationViewControllerDelegate
+- (void)paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *)controller
+                       didAuthorizePayment:(PKPayment *)payment
+                                completion:(void (^)(PKPaymentAuthorizationStatus status))completion {
+    PKPaymentToken *payToken = payment.token;               //支付凭据，发给服务端进行验证支付是否真实有效
+    PKContact *billingContact = payment.billingContact;     //账单信息
+    PKContact *shippingContact = payment.shippingContact;   //送货信息
+    PKContact *shippingMethod = payment.shippingMethod;     //送货方式
+    
+    if ([self.controller conformsToProtocol:@protocol(TBApplyPayDelegate)] && [self.controller respondsToSelector:@selector(applyPayAuthorization:result:)]) {
+        [self.controller applyPayAuthorization:payment result:^(BOOL isAuthorization) {
+            if (isAuthorization) {
+                completion(PKPaymentAuthorizationStatusSuccess);
+            } else {
+                completion(PKPaymentAuthorizationStatusFailure);
+            }
+        }];
+    } else {
+        completion(PKPaymentAuthorizationStatusFailure);
+    }
+}
+
+- (void)paymentAuthorizationViewControllerDidFinish:(PKPaymentAuthorizationViewController *)controller{
+    [controller dismissViewControllerAnimated:YES completion:nil];
+    if ([self.controller conformsToProtocol:@protocol(TBApplyPayDelegate)] && [self.controller respondsToSelector:@selector(applyPayDidFinish)]) {
+        [self.controller applyPayDidFinish];
+    }
+}
+
+
+
+- (id)dictionaryWithJsonString:(NSString *)jsonString {
     if (jsonString == nil) {
         return nil;
     }
