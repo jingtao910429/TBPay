@@ -74,6 +74,7 @@
 		FFA663C31FD7A8580079F4ED /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		FFA663C51FD7A8640079F4ED /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FFAC96D81FD7E2CD008605B7 /* TBPayExample-Bridgin-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBPayExample-Bridgin-Header.h"; sourceTree = "<group>"; };
+		FFF924E11FDE50B8002B5190 /* TBPayExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TBPayExample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +167,7 @@
 		FFA6637F1FD79F4A0079F4ED /* TBPayExample */ = {
 			isa = PBXGroup;
 			children = (
+				FFF924E11FDE50B8002B5190 /* TBPayExample.entitlements */,
 				FFA663801FD79F4A0079F4ED /* AppDelegate.swift */,
 				FFA663821FD79F4A0079F4ED /* ViewController.swift */,
 				FFAC96D81FD7E2CD008605B7 /* TBPayExample-Bridgin-Header.h */,
@@ -267,6 +269,11 @@
 					FFA6637C1FD79F4A0079F4ED = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
 					};
 					FFA663901FD79F4A0079F4ED = {
 						CreatedOnToolsVersion = 9.0;
@@ -557,6 +564,7 @@
 			baseConfigurationReference = B7DCE2DEC29438D5EFCD66A2 /* Pods-TBPayExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TBPayExample/TBPayExample.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E2MHYTRHEB;
@@ -589,7 +597,7 @@
 					"\"UIKit\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.2boss.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rabbit.liyou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -604,6 +612,7 @@
 			baseConfigurationReference = 957D818365C984ACB25FE65F /* Pods-TBPayExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TBPayExample/TBPayExample.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E2MHYTRHEB;
@@ -636,7 +645,7 @@
 					"\"UIKit\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.2boss.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rabbit.liyou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/TBPayExample/TBPayExample-Bridgin-Header.h";

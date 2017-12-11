@@ -5,5 +5,5 @@ source 'https://github.com/jingtao910429/2BossSpecs.git'
 
 target 'TBPayExample' do
     use_frameworks!
-    pod 'TBPay'
+    pod 'TBPay', '~> 0.1.4'
 end
